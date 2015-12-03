@@ -44,7 +44,7 @@ def deploy_app(app_id):
             print(e)
     lib.app_exists(app_id)
     q.enqueue(lib.deploy_app, app_id)
-    return 'Deployment added in queue, should be ok soon.<br> <a href="/">Go back to app</a>'
+    return 'Task added in queue, should be deployed soon.<br> <a href="/">Go back to app</a>'
 
 
 if __name__ == "__main__":
