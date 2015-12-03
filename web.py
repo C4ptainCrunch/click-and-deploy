@@ -40,7 +40,7 @@ def deploy_app(app_id):
             data = json.loads(request.data)
             if data['ref'].split('/')[-1] != "master":
                 return "Not a usefull branch : {}".format(data['ref'])
-        except (json.JSONError, KeyError) as e:
+        except (JSONError, KeyError) as e:
             print(e)
     lib.app_exists(app_id)
     q.enqueue(lib.deploy_app, app_id)
