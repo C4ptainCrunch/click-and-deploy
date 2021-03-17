@@ -1,5 +1,5 @@
 Fabric==1.7.0
-Flask==0.10.1
+Flask==1.0
 path.py==4.3
 redis==2.7.6
 rq==0.3.8
